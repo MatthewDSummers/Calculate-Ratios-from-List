@@ -1,8 +1,11 @@
 """ Input size of list; Input space separated items of list.
     The function calculates the ratio of positives, negatives, and zeroes in the list.
+
+    Constraints:
+    0 < n <= 100;  -100 <= arr[i] <= 100
 """
 
-def plusMinus(arr):
+def calculate_and_print_ratios(arr):
     length = n
     if n != len(arr):
         length = len(arr)
@@ -43,4 +46,4 @@ def check_constraints(arr, length):
 if __name__ == '__main__':
     n = int(input("Provide length of list\n").strip())
     arr = list(map(int, input("Provide space-separated items in list\n").rstrip().split()))
-    plusMinus(arr)
+    calculate_and_print_ratios(arr)
